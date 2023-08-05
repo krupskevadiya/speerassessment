@@ -1,0 +1,18 @@
+export default {
+  dimen1: 1,
+  dimen2: 2,
+  dimen3: 3,
+  dimen4: 4,
+  dimen5: 5,
+  dimen10: 10,
+  dimen15: 15,
+  dimen20: 20,
+  dimen25: 25,
+  dimen30: 30,
+  dimen35: 35,
+  dimen40: 40,
+  dimen45: 45,
+  dimen50: 50,
+  dimen55: 55,
+  dimen60: 60,
+};
