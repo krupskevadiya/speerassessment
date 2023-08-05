@@ -1,8 +1,12 @@
 import React from 'react';
 import {View} from 'react-native';
-import Route from './src/route';
+import AppRoute from './src/route';
 const App = props => {
-  return <Route></Route>;
+  return (
+    <View style={{flex: 1}}>
+      <AppRoute></AppRoute>
+    </View>
+  );
 };
 
 export default App;

@@ -1,22 +1,27 @@
-export const getDatafromGetApi = url => {
-  fetch(url)
-    .then(response => response.json())
-    .then(responseJson => {
-      return responseJson;
-    })
-    .catch(error => {
-      return error;
-    });
+import AppUrl from './AppUrl';
+import Constant from './Constant';
+import {PrintLog} from './PrintLog';
+import axios from 'axios';
+
+export const getDatafromGetApi = async url => {
+  try {
+    const response = await axios.get(url);
+    return response;
+  } catch (err) {
+    return err;
+  }
 };
 
-export const getDatafromPostApi = (url, inputData) => {
-  fetch(url, {
-    method: 'POST',
-    body: inputData,
-  })
-    .then(response => response.json())
-    .then(responseJson => {
-      return responseJson;
+export const getDatafromSearch = async inputData => {
+  return await axios
+    .post(AppUrl.getUser, inputData, {
+      headers: {
+        Authorization: 'Bearer ' + Constant.authTokenGit,
+      },
+    })
+    .then(response => {
+      const data = response.data.data.search;
+      return data;
     })
     .catch(error => {
       return error;

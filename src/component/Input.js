@@ -6,6 +6,7 @@ export const Input = props => {
       placeholder={props.placeholder}
       value={props.value}
       onChangeText={text => props.onChangeText(text)}
-      placeholderTextColor={props.placeholderTextColor}></TextInput>
+      placeholderTextColor={props.placeholderTextColor}
+      onSubmitEditing={props.onSubmitEditing}></TextInput>
   );
 };

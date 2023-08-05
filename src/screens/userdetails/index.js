@@ -1,6 +1,7 @@
 import {View} from 'react-native';
 import styles from './style';
 
-export const UserDetails = props => {
+const UserDetails = props => {
   return <View></View>;
 };
+export default UserDetails;

@@ -5,6 +5,8 @@ export default {
   dimen4: 4,
   dimen5: 5,
   dimen10: 10,
+  dimen12: 12,
+  dimen14: 14,
   dimen15: 15,
   dimen20: 20,
   dimen25: 25,

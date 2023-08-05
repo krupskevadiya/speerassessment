@@ -1,28 +1,30 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Routes from '../constant/StaticRoute';
-import Landing from '../screens/landing';
-import Users from '../screens/users';
-import UserDetails from '../screens/userdetails';
+import StaticRoute from '../constant/StaticRoute';
+import users from '../screens/users';
+import userdetails from '../screens/userdetails';
+import landing from '../screens/landing';
 
 const Stack = createNativeStackNavigator();
-const Route = () => {
+const AppRoute = props => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name={Routes.landingRoute}
-          component={Landing}></Stack.Screen>
-
-        <Stack.Screen name={Routes.userRoute} component={Users}></Stack.Screen>
+          name={StaticRoute.landingRoute}
+          component={landing}></Stack.Screen>
 
         <Stack.Screen
-          name={Routes.userDetailsRoute}
-          component={UserDetails}></Stack.Screen>
+          name={StaticRoute.userRoute}
+          component={users}></Stack.Screen>
+
+        <Stack.Screen
+          name={StaticRoute.userDetailsRoute}
+          component={userdetails}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-export default Route;
+export default AppRoute;
