@@ -4,6 +4,7 @@ export default {
   dimen3: 3,
   dimen4: 4,
   dimen5: 5,
+  dimen8: 8,
   dimen10: 10,
   dimen12: 12,
   dimen14: 14,
@@ -17,4 +18,8 @@ export default {
   dimen50: 50,
   dimen55: 55,
   dimen60: 60,
+  dimen70: 70,
+  dimen90: 90,
+  dimen100: 100,
+  dimen120: 120,
 };

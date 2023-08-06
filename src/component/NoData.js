@@ -1,10 +1,12 @@
 import {Text, View} from 'react-native';
 import styles from './style';
+import {PrintLog} from '../constant/PrintLog';
 
-export const NoData = props => {
+const NoData = props => {
   return (
     <View style={styles.mainView}>
-      <Text style={styles.noDataText}>{props.text}</Text>
+      <Text style={styles.noDataText}>{props.displayText}</Text>
     </View>
   );
 };
+export default NoData;

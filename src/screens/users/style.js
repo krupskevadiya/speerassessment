@@ -6,7 +6,10 @@ const styles = StyleSheet.create({
   mainView: {
     flex: 1,
     backgroundColor: Colors.screenbackground,
+  },
+  innerView: {
     padding: Dimens.dimen12,
+    flex: 1,
   },
   searchView: {
     borderRadius: Dimens.dimen3,
@@ -26,6 +29,14 @@ const styles = StyleSheet.create({
   userListView: {
     flex: 1,
     marginVertical: Dimens.dimen10,
+  },
+  noDataView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadMoreView: {
+    alignItems: 'center',
   },
 });
 export default styles;

@@ -6,4 +6,5 @@ export default {
   lightGray: '#e6e6e6',
   placeHolder: '#8c8c8c',
   darkGray: '#8c8c8c',
+  theme: '#003366',
 };

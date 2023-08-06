@@ -5,6 +5,8 @@ import StaticRoute from '../constant/StaticRoute';
 import users from '../screens/users';
 import userdetails from '../screens/userdetails';
 import landing from '../screens/landing';
+import follow from '../screens/followers';
+import following from '../screens/followings';
 
 const Stack = createNativeStackNavigator();
 const AppRoute = props => {
@@ -13,15 +15,27 @@ const AppRoute = props => {
       <Stack.Navigator>
         <Stack.Screen
           name={StaticRoute.landingRoute}
-          component={landing}></Stack.Screen>
+          component={landing}
+          options={{headerShown: false}}></Stack.Screen>
 
         <Stack.Screen
           name={StaticRoute.userRoute}
-          component={users}></Stack.Screen>
+          component={users}
+          options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen
+          name={StaticRoute.followersRoute}
+          component={follow}
+          options={{headerShown: false}}></Stack.Screen>
+
+        <Stack.Screen
+          name={StaticRoute.followingRoute}
+          component={following}
+          options={{headerShown: false}}></Stack.Screen>
 
         <Stack.Screen
           name={StaticRoute.userDetailsRoute}
-          component={userdetails}></Stack.Screen>
+          component={userdetails}
+          options={{headerShown: false}}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
